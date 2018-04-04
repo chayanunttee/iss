@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>Input</title>
+<title>Tee Chayanunt</title>
 
 <script language="JavaScript">
 
