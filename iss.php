@@ -4,7 +4,6 @@
 <title>Input Number</title>
 
 <script language="JavaScript">
-
 function gcd (a, b)
 {
    var r;
@@ -16,16 +15,13 @@ function gcd (a, b)
    }
    return a;
 }
-
 function rel_prime(phi)
 {
    var rel=5;
-
    while (gcd(phi,rel)!=1)
       rel++;
    return rel;
 }
-
 function power(a, b)
 {
    var temp=1, i;
@@ -33,7 +29,6 @@ function power(a, b)
       temp*=a;
     return temp;
 }
-
 function encrypt(N, e, M)
 {
    var r,i=0,prod=1,rem_mod=0;
@@ -53,7 +48,6 @@ function encrypt(N, e, M)
    }
    return prod;
 }
-
 function calculate_d(phi,e)
 {
    var x,y,x1,x2,y1,y2,temp,r,orig_phi;
@@ -76,7 +70,6 @@ function calculate_d(phi,e)
    }
    return y2;
 }
-
 function decrypt(c, d, N)
 {
    var r,i=0,prod=1,rem_mod=0;
@@ -96,8 +89,6 @@ function decrypt(c, d, N)
    }
    return prod;
 }
-
-
 function openNew()
 {
    var p=parseInt(document.Input.p.value);
@@ -116,7 +107,6 @@ function openNew()
    document.getElementById("five").innerHTML = d;
    document.getElementById("six").innerHTML = decrypt(c,d,N);
 }
-
 // end scripting here -->
 </script>
 
@@ -160,35 +150,35 @@ function openNew()
 <p>
   <font size="6"><h2>Output Form</h2></font>
 </p>
-<hr>
+
 <p>
   <font color="#FF3399">
-    1.&nbsp;&nbsp;&nbsp; N = p * q |  ANS :<div id="one"></div>
+    1.&nbsp;&nbsp;&nbsp; <h4>N = p * q |  ANS :</h4><div id="one"></div>
   </font>
 </p>
 <p>
   <font color="#FF6600">
-    2.&nbsp;&nbsp;&nbsp; phi = ( p - 1 ) * ( q - 1)&nbsp;&nbsp;&nbsp;&nbsp; | ANS : <div id="two"></div>
+    2.&nbsp;&nbsp;&nbsp;<h4> phi = ( p - 1 ) * ( q - 1)&nbsp;&nbsp;&nbsp;&nbsp; | ANS : </h4><div id="two"></div>
   </font>
 </p>
 <p>
   <font color="#FF00FF">
-    3.&nbsp;&nbsp;&nbsp; GCD( phi , e ) = 1 |  ANS :<div id="three"></div>
+    3.&nbsp;&nbsp;&nbsp;<h4> GCD( phi , e ) = 1 |  ANS :</h4><div id="three"></div>
   </font>
 </p>
 <p>
   <font color="#CC3300">
-    4.&nbsp;&nbsp;&nbsp;Encrypted Text ( c ) = M<sup>e</sup>* ( mod N ) |  ANS :<div id="four"></div>
+    4.&nbsp;&nbsp;&nbsp;<h4>Encrypted Text ( c ) = M<sup>e</sup>* ( mod N ) |  ANS :</h4><div id="four"></div>
   </font>
 </p>
 <p>
   <font color="#00FF00">
-    5.&nbsp;&nbsp;&nbsp;e * d =&nbsp; 1 * ( mod phi ) |  ANS :<div id="five"></div>
+    5.&nbsp;&nbsp;&nbsp;<h4>e * d =&nbsp; 1 * ( mod phi ) |  ANS :</h4><div id="five"></div>
   </font>
 </p>
 <p>
   <font color="#000000">
-    6.&nbsp;&nbsp;&nbsp;Decrypted Text = c<sup>d</sup> * (mod N ) |  ANS : <div id="six"></div>
+    6.&nbsp;&nbsp;&nbsp;<h4>Decrypted Text = c<sup>d</sup> * (mod N ) |  ANS : </h4><div id="six"></div>
   </font>
 </p>
 
